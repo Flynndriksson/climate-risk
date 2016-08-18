@@ -1,0 +1,676 @@
+﻿Log file open, 08/18/16 13:07:00
+LogInit:Display: Running engine for game: ClimateChanger
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1271278386) SRandInit(-1271278383).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.227673
+LogInit: Version: 4.12.2-3005592+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3005592
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jun  8 2016 08:57:49
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: E:/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.08.18-01.07.00:881][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-01.07.00:881][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.08.18-01.07.00:949][  0]LogInit: Computer: BEAST
+[2016.08.18-01.07.00:949][  0]LogInit: User: Tyrone
+[2016.08.18-01.07.00:949][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.08.18-01.07.00:949][  0]LogInit: High frequency timer resolution =3.924117 MHz
+[2016.08.18-01.07.00:950][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2016.08.18-01.07.00:950][  0]LogMemory: Platform Memory Stats for Windows
+[2016.08.18-01.07.00:950][  0]LogMemory: Process Physical Memory: 190.30 MB used, 190.30 MB peak
+[2016.08.18-01.07.00:950][  0]LogMemory: Process Virtual Memory: 195.08 MB used, 195.08 MB peak
+[2016.08.18-01.07.00:950][  0]LogMemory: Physical Memory: 5191.63 MB used, 16348.61 MB total
+[2016.08.18-01.07.00:950][  0]LogMemory: Virtual Memory: 554.49 MB used, 134217728.00 MB total
+[2016.08.18-01.07.01:920][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.08.18-01.07.02:923][  0]LogD3D11RHI: D3D11 adapters:
+[2016.08.18-01.07.02:939][  0]LogD3D11RHI:    0. 'AMD Radeon R9 200 Series' (Feature Level 11_0)
+[2016.08.18-01.07.02:939][  0]LogD3D11RHI:       3053/0/8174 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x1002
+[2016.08.18-01.07.02:942][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.08.18-01.07.02:942][  0]LogD3D11RHI:       0/0/8174 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.08.18-01.07.02:942][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.08.18-01.07.02:948][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.08.18-01.07.02:948][  0]LogD3D11RHI:     GPU DeviceId: 0x6798 (for the marketing name, search the web for "GPU Device Id")
+[2016.08.18-01.07.02:948][  0]LogWindows: EnumDisplayDevices:
+[2016.08.18-01.07.02:948][  0]LogWindows:    0. 'AMD Radeon R9 200 Series' (P:1 D:1)
+[2016.08.18-01.07.02:949][  0]LogWindows:    1. 'AMD Radeon R9 200 Series' (P:0 D:1)
+[2016.08.18-01.07.02:949][  0]LogWindows:    2. 'AMD Radeon R9 200 Series' (P:0 D:0)
+[2016.08.18-01.07.02:950][  0]LogWindows:    3. 'AMD Radeon R9 200 Series' (P:0 D:0)
+[2016.08.18-01.07.02:950][  0]LogWindows:    4. 'AMD Radeon R9 200 Series' (P:0 D:0)
+[2016.08.18-01.07.02:950][  0]LogWindows:    5. 'AMD Radeon R9 200 Series' (P:0 D:0)
+[2016.08.18-01.07.02:951][  0]LogWindows: DebugString: FoundDriverCount:6 
+[2016.08.18-01.07.02:951][  0]LogD3D11RHI:     Adapter Name: AMD Radeon R9 200 Series
+[2016.08.18-01.07.02:951][  0]LogD3D11RHI:   Driver Version: Crimson 16.7.3 (internal:16.300.2311.0, unified:16.300.2311.0)
+[2016.08.18-01.07.02:951][  0]LogD3D11RHI:      Driver Date: 7-18-2016
+[2016.08.18-01.07.02:951][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.08.18-01.07.02:960][  0]LogD3D11RHI: Async texture creation disabled: no driver support
+[2016.08.18-01.07.02:974][  0]LogD3D11RHI: GPU Timing Frequency: 27.000000 (Debug: 2 1)
+[2016.08.18-01.07.02:975][  0]LogShaderCompilers: Guid format shader working directory is -16 characters bigger than the processId version (../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Intermediate/Shaders/WorkingDirectory/5160/).
+[2016.08.18-01.07.02:975][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Tyrone/AppData/Local/Temp/UnrealShaderWorkingDir/1D7D34844A0F79F786A73298F1C2B455/'.
+[2016.08.18-01.07.02:975][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.08.18-01.07.08:369][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.08.18-01.07.08:408][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.08.18-01.07.08:448][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.08.18-01.07.08:482][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.08.18-01.07.08:508][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.08.18-01.07.08:542][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.08.18-01.07.08:565][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.08.18-01.07.08:587][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.08.18-01.07.08:611][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.08.18-01.07.08:633][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.08.18-01.07.08:655][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.08.18-01.07.08:700][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.08.18-01.07.08:700][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.08.18-01.07.08:712][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.08.18-01.07.08:835][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.08.18-01.07.08:866][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.08.18-01.07.08:898][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.08.18-01.07.08:927][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.08.18-01.07.08:985][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.08.18-01.07.08:985][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.08.18-01.07.10:035][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache: Loaded boot cache 0.32s 48MB C:/Users/Tyrone/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Tyrone/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.08.18-01.07.10:356][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.08.18-01.07.10:611][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.08.18-01.07.10:624][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Tyrone/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.08.18-01.07.13:573][  0]LogInit: Selected Device Profile: [Windows]
+[2016.08.18-01.07.13:576][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.08.18-01.07.14:587][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.08.18-01.07.14:587][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.08.18-01.07.14:587][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.08.18-01.07.16:540][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
+[2016.08.18-01.07.16:598][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.053003 seconds
+[2016.08.18-01.07.16:603][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.08.18-01.07.16:603][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.08.18-01.07.16:603][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.08.18-01.07.16:624][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.08.18-01.07.24:021][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-01.07.24:021][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.08.18-01.07.49:282][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.08.18-01.07.50:961][  0]SourceControl: Info Source control is disabled
+[2016.08.18-01.07.53:389][  0]SourceControl: Info Source control is disabled
+[2016.08.18-01.07.53:569][  0]SourceControl: Info Source control is disabled
+[2016.08.18-01.07.53:698][  0]SourceControl: Info Source control is disabled
+[2016.08.18-01.07.55:753][  0]LogEngine: Initializing Engine...
+[2016.08.18-01.07.55:859][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.18-01.07.55:860][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.08.18-01.07.56:078][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.18-01.07.56:124][  0]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.08.18-01.07.56:149][  0]LogInit: FAudioDevice initialized.
+[2016.08.18-01.07.56:197][  0]LogDerivedDataCache: Saved boot cache 0.05s 48MB C:/Users/Tyrone/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.08.18-01.07.56:223][  0]LogInit: Texture streaming: Enabled
+[2016.08.18-01.07.56:413][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-01.07.58:357][  0]LogInit: Transaction tracking system initialized
+[2016.08.18-01.07.58:795][  0]BlueprintLog: New page: Editor Load
+[2016.08.18-01.08.01:588][  0]LocalizationService: Info Localization service is disabled
+[2016.08.18-01.08.02:992][  0]LogConsoleResponse:Display: 
+[2016.08.18-01.08.03:906][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.08.18-01.08.03:906][  0]LogCook:Display: Mobile HDR setting 1
+[2016.08.18-01.08.05:050][  0]LogFileCache: Scanning file cache for directory 'E:/Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/' took 0.02s
+[2016.08.18-01.08.07:073][  0]SourceControl: Info Source control is disabled
+[2016.08.18-01.08.07:073][  0]Cmd: MAP LOAD FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Maps/TopDownExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.18-01.08.07:073][  0]LogEditorServer:Warning: Can't find file '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Maps/TopDownExampleMap.umap'
+[2016.08.18-01.08.07:073][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.18-01.08.07:162][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 88.699ms to complete.
+[2016.08.18-01.08.07:163][  0]LogFileHelpers: Loading map 'TopDownExampleMap' took 0.089
+[2016.08.18-01.08.07:741][  0]LogCollectionManager: Loaded 0 collections in 0.002451 seconds
+[2016.08.18-01.08.07:791][  0]LogFileCache: Scanning file cache for directory 'E:/Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Collections/' took 0.01s
+[2016.08.18-01.08.07:791][  0]LogFileCache: Scanning file cache for directory 'E:/Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/Developers/Tyrone/Collections/' took 0.01s
+[2016.08.18-01.08.07:791][  0]LogFileCache: Scanning file cache for directory 'E:/Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/Collections/' took 0.01s
+[2016.08.18-01.08.07:791][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000011 seconds
+[2016.08.18-01.08.07:803][  0]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 2047 classes and 369 folders.
+[2016.08.18-01.08.07:808][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.08.18-01.08.07:808][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.08.18-01.08.07:809][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0007 seconds. Added 12 classes and 0 folders.
+[2016.08.18-01.08.07:815][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.08.18-01.08.13:057][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0015 seconds. Added 0 classes and 0 folders.
+[2016.08.18-01.08.13:242][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.08.18-01.08.13:333][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.08.18-01.08.13:340][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.08.18-01.08.13:462][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2016.08.18-01.08.13:462][  0]LogLoad: Full Startup: 77.99 seconds (BP compile: 0.16 seconds)
+[2016.08.18-01.08.13:462][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.08.18-01.08.13:462][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.08.18-01.08.13:472][  0]LogOcInput: OculusInput pre-init called
+[2016.08.18-01.08.13:493][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.08.18-01.08.14:133][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2016.08.18-01.08.15:279][  2]LogAssetRegistry: Asset discovery search completed in 58.7606 seconds
+[2016.08.18-01.08.15:279][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.08.18-01.08.15:279][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000050 seconds (updated 0 objects)
+[2016.08.18-01.08.17:996][292]LogWindows:Warning: FWindowsPlatformSurvey::TickSurveyHardware() failed to parse available memory from dxdiag report
+[2016.08.18-01.08.18:012][292]LogSynthBenchmark:Display: FSynthBenchmark (V0.95):  requested WorkScale=5.00
+[2016.08.18-01.08.18:012][292]LogSynthBenchmark:Display: ===============
+[2016.08.18-01.08.18:012][292]LogSynthBenchmark:Display: Main Processor:
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:          ... 0.027317 s/Run 'RayIntersect'
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:          ... 0.022750 s/Run 'Fractal'
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display: 
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   CompiledTarget_x_Bits: 64
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   UE_BUILD_SHIPPING: 0
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   UE_BUILD_TEST: 0
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   UE_BUILD_DEBUG: 0
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   TotalPhysicalGBRam: 16
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   NumberOfCores (physical): 4
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   NumberOfCores (logical): 8
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   CPU Perf Index 0: 93.8 (weight 1.00)
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   CPU Perf Index 1: 125.7 (weight 1.50)
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:  
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display: Graphics:
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   Adapter Name: 'AMD Radeon R9 200 Series'
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   (On Optimus the name might be wrong, memory should be ok)
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   Vendor Id: 0x1002
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   Device Id: 0x6798
+[2016.08.18-01.08.18:263][292]LogSynthBenchmark:Display:   GPU Memory: 3054/0/8175 MB
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:   GPU first test: 0.00s
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:          ... 1.116 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be very inaccurate)
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:          ... 1.518 GigaPix/s, Confidence=100% 'TexHeavy' (likely to be very inaccurate)
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:          ... 1.339 GigaPix/s, Confidence=89% 'DepTexHeavy' (likely to be very inaccurate)
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:          ... 2.050 GigaPix/s, Confidence=89% 'FillOnly' (likely to be very inaccurate)
+[2016.08.18-01.08.18:283][292]LogSynthBenchmark:Display:          ... 0.514 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be very inaccurate)
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:   GPU second test: 0.02s
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:          ... 5.564 GigaPix/s, Confidence=100% 'ALUHeavyNoise' (likely to be inaccurate)
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:          ... 5.093 GigaPix/s, Confidence=100% 'TexHeavy' (likely to be inaccurate)
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:          ... 4.316 GigaPix/s, Confidence=100% 'DepTexHeavy' (likely to be inaccurate)
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:          ... 11.952 GigaPix/s, Confidence=89% 'FillOnly' (likely to be inaccurate)
+[2016.08.18-01.08.18:312][292]LogSynthBenchmark:Display:          ... 0.630 GigaPix/s, Confidence=100% 'Bandwidth' (likely to be inaccurate)
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:   GPU third test: 0.83s
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:          ... 8.729 GigaPix/s, Confidence=100% 'ALUHeavyNoise'
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:          ... 6.693 GigaPix/s, Confidence=100% 'TexHeavy'
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:          ... 5.958 GigaPix/s, Confidence=89% 'DepTexHeavy'
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:          ... 26.512 GigaPix/s, Confidence=100% 'FillOnly'
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:          ... 0.641 GigaPix/s, Confidence=100% 'Bandwidth'
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display: 
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:   GPU Perf Index 0: 189.7 (weight 1.00)
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:   GPU Perf Index 1: 89.9 (weight 0.10)
+[2016.08.18-01.08.19:178][292]LogSynthBenchmark:Display:   GPU Perf Index 2: 154.9 (weight 0.10)
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display:   GPU Perf Index 3: 104.1 (weight 3.00)
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display:   GPU Perf Index 4: 59.8 (weight 1.00)
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display:   CPUIndex: 112.9
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display:   GPUIndex: 112.8
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display: 
+[2016.08.18-01.08.19:179][292]LogSynthBenchmark:Display:          ... Total Time: 1.166312 sec
+[2016.08.18-01.08.41:609][895]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.18-01.08.41:609][895]PIE: New page: PIE session: Untitled_0 (Aug 19, 2016, 1:08:41 AM)
+[2016.08.18-01.08.41:609][895]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_0
+[2016.08.18-01.08.41:610][895]LogPlayLevel: PIE: StaticDuplicateObject took: (0.000858s)
+[2016.08.18-01.08.41:611][895]LogAIModule: Creating AISystem for world NewWorld
+[2016.08.18-01.08.41:611][895]LogPlayLevel: PIE: World Init took: (0.000970s)
+[2016.08.18-01.08.41:611][895]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_0.NewWorld to /Temp/UEDPIE_0_Untitled_0.NewWorld (0.002071s)
+[2016.08.18-01.08.41:651][895]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.08.18-01.08.41:672][895]LogInit: FAudioDevice initialized.
+[2016.08.18-01.08.42:270][895]LogWorld: Game class is 'TestGameMode_C'
+[2016.08.18-01.08.42:273][895]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_0.NewWorld up for play (max tick rate 0) at 2016.08.18-13.08.42
+[2016.08.18-01.08.42:274][895]LogWorld: Bringing up level for play took: 0.001010
+[2016.08.18-01.08.42:280][895]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0008 seconds. Added 11 classes and 0 folders.
+[2016.08.18-01.08.42:283][895]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_0 1.414
+[2016.08.18-01.08.59:818][936]LogTexture:Display: Building textures: HQ_Lightmap0_1 (AutoDXT)
+[2016.08.18-01.09.00:011][936]LogTexture:Display: Building textures: HQ_Lightmap0_2 (AutoDXT)
+[2016.08.18-01.09.00:104][936]LogTexture:Display: Building textures: HQ_Lightmap0_3 (AutoDXT)
+[2016.08.18-01.09.00:119][936]LogTexture:Display: Building textures: LQ_Lightmap_0_1 (DXT1)
+[2016.08.18-01.09.00:211][936]LogTexture:Display: Building textures: LQ_Lightmap_0_2 (DXT1)
+[2016.08.18-01.09.00:268][936]LogTexture:Display: Building textures: LQ_Lightmap_0_3 (DXT1)
+[2016.08.18-01.09.00:280][936]LogTexture:Display: Building textures: SkyOcclusion0_1 (AutoDXT)
+[2016.08.18-01.09.00:373][936]LogTexture:Display: Building textures: SkyOcclusion0_2 (AutoDXT)
+[2016.08.18-01.09.00:413][936]LogTexture:Display: Building textures: SkyOcclusion0_3 (AutoDXT)
+[2016.08.18-01.09.00:441][936]LogTexture:Display: Building textures: ShadowMapTexture2D_0 (G8)
+[2016.08.18-01.09.00:551][936]LogTexture:Display: Building textures: ShadowMapTexture2D_1 (G8)
+[2016.08.18-01.09.00:624][936]LogAIModule: Creating AISystem for world TestMap
+[2016.08.18-01.09.00:660][936]Cmd: MAP LOAD FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Maps/TestMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.08.18-01.09.00:660][936]LightingResults: New page: Lighting Build
+[2016.08.18-01.09.00:664][936]LogContentBrowser: Native class hierarchy updated for 'StatsViewer' in 0.0005 seconds. Added 5 classes and 0 folders.
+[2016.08.18-01.09.00:664][936]LoadErrors: New page: Loading map: TestMap.umap
+[2016.08.18-01.09.00:665][936]MapCheck: New page: Map Check
+[2016.08.18-01.09.00:665][936]LightingResults: New page: Lighting Build
+[2016.08.18-01.09.00:701][936]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.08.18-01.09.00:726][936]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.08.18-01.09.00:823][936]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 96.747ms to complete.
+[2016.08.18-01.09.00:823][936]LogFileHelpers: Loading map 'TestMap' took 0.164
+[2016.08.18-01.09.06:159][548]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-01.09.06:159][548]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.18-01.09.06:159][548]PIE: New page: PIE session: TestMap (Aug 19, 2016, 1:09:06 AM)
+[2016.08.18-01.09.06:159][548]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TestMap
+[2016.08.18-01.09.06:202][548]LogPlayLevel: PIE: StaticDuplicateObject took: (0.042281s)
+[2016.08.18-01.09.06:203][548]LogAIModule: Creating AISystem for world TestMap
+[2016.08.18-01.09.06:204][548]LogPlayLevel: PIE: World Init took: (0.001783s)
+[2016.08.18-01.09.06:204][548]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TestMap.TestMap to /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap (0.044465s)
+[2016.08.18-01.09.06:241][548]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.08.18-01.09.06:262][548]LogInit: FAudioDevice initialized.
+[2016.08.18-01.09.06:316][548]LogWorld: Game class is 'TestGameMode_C'
+[2016.08.18-01.09.06:322][548]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2016.08.18-13.09.06
+[2016.08.18-01.09.06:322][548]LogWorld: Bringing up level for play took: 0.004275
+[2016.08.18-01.09.06:324][548]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TestMap -0.544
+[2016.08.18-01.09.06:324][548]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-01.09.58:035][749]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-01.09.58:067][749]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-01.22.15:570][941]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.22.15:579][941]LogSavePackage: Save=5.82ms
+[2016.08.18-01.22.15:579][941]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI3EC9DCDD4F5E4B7B0B2583B330CA835D.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.22.15:581][941]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.22.17:479][108]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 111 classes and 0 folders.
+[2016.08.18-01.31.24:943][800]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/TestMap' took 0.047
+[2016.08.18-01.31.24:945][800]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TopDownBP/HUDS/MainUI] ([1] browsable assets)...
+[2016.08.18-01.31.24:945][800]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/HUDS/MainUI]
+[2016.08.18-01.31.24:979][800]LogSavePackage: Save=28.33ms
+[2016.08.18-01.31.24:979][800]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI_Auto14436D02E40023DE9EF0866BC7B007DA4.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/HUDS/MainUI_Auto1.uasset'
+[2016.08.18-01.31.24:981][800]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/HUDS/MainUI_Auto1.uasset
+[2016.08.18-01.31.24:981][800]LogFileHelpers: Auto-saving content packages took 0.037
+[2016.08.18-01.43.52:882][489]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/TestMap' took 0.035
+[2016.08.18-01.43.52:884][489]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TopDownBP/HUDS/MainUI] ([1] browsable assets)...
+[2016.08.18-01.43.52:884][489]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/HUDS/MainUI]
+[2016.08.18-01.43.52:963][489]LogSavePackage: Save=72.84ms
+[2016.08.18-01.43.52:963][489]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI_Auto2BC38B2DF43EE17A761A6BEA1B2CFDD77.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/HUDS/MainUI_Auto2.uasset'
+[2016.08.18-01.43.52:964][489]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/HUDS/MainUI_Auto2.uasset
+[2016.08.18-01.43.52:964][489]LogFileHelpers: Auto-saving content packages took 0.081
+[2016.08.18-01.50.02:579][133]BlueprintLog: New page: Compile MainUI
+[2016.08.18-01.50.02:704][133]BlueprintEditorCompileResults: Info [2587.23] Compile of MainUI successful! [in 124 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-01.50.03:576][218]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.50.03:632][218]LogSavePackage: Save=50.96ms
+[2016.08.18-01.50.03:632][218]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI925AAEFE48D0B957680FA68859BED722.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.50.03:635][218]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.50.06:818][587]BlueprintLog: New page: Compile MainUI
+[2016.08.18-01.50.06:935][587]BlueprintEditorCompileResults: Info [2591.46] Compile of MainUI successful! [in 116 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-01.50.07:943][688]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.50.07:996][688]LogSavePackage: Save=48.65ms
+[2016.08.18-01.50.07:996][688]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI51102CB5490588AC8EBBD2B3782C71F9.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.50.07:999][688]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.52.25:949][ 37]BlueprintLog: New page: Compile MainUI
+[2016.08.18-01.52.26:094][ 37]BlueprintEditorCompileResults: Info [2730.62] Compile of MainUI successful! [in 145 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-01.52.27:312][175]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.52.27:344][175]LogSavePackage: Save=27.76ms
+[2016.08.18-01.52.27:344][175]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI61CE784747EA4C4A0F486381422841DD.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.52.27:346][175]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.53.44:804][ 28]LogTexture:Display: Building textures: TilePatine_N (BC5)
+[2016.08.18-01.53.44:864][ 28]LogTexture:Display: Building textures: TilePatine_D (AutoDXT)
+[2016.08.18-01.53.45:148][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:0028
+[2016.08.18-01.53.45:148][ 28]LogScript:Warning: Accessed None
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:003D
+[2016.08.18-01.53.45:148][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:0E09
+[2016.08.18-01.53.45:148][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:1018
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:0028
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:003D
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:10DB
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:1224
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:0102
+[2016.08.18-01.53.45:149][ 28]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:0102
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:0028
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:003D
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:0E09
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:1018
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:0028
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:MoveMentSpeedCalculation:003D
+[2016.08.18-01.53.45:653][ 29]LogScript:Warning: Accessed None trying to read property CameraPawnRef
+	TestCameraController_C /Engine/Transient.World_4:PersistentLevel.TestCameraController_C_0
+	Function /Game/TopDownBP/Blueprints/TestCameraController.TestCameraController_C:ExecuteUbergraph_TestCameraController:10DB
+[2016.08.18-01.55.29:058][216]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/TopDownBP/Maps/TestMap' took 0.056
+[2016.08.18-01.55.29:062][216]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TopDownBP/Blueprints/TestCameraController] ([1] browsable assets)...
+[2016.08.18-01.55.29:062][216]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/Blueprints/TestCameraController]
+[2016.08.18-01.55.29:267][216]LogSavePackage: Save=196.79ms
+[2016.08.18-01.55.29:267][216]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/TestCameraController_Auto3BC02B0E04B119F0D31BC69B45C7326C5.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/Blueprints/TestCameraController_Auto3.uasset'
+[2016.08.18-01.55.29:269][216]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/Autosaves/Game/TopDownBP/Blueprints/TestCameraController_Auto3.uasset
+[2016.08.18-01.55.29:270][216]LogFileHelpers: Auto-saving content packages took 0.209
+[2016.08.18-01.57.17:743][ 32]BlueprintLog: New page: Compile MainUI
+[2016.08.18-01.57.18:060][ 32]BlueprintEditorCompileResults: Info [3022.58] Compile of MainUI successful! [in 316 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-01.57.18:786][114]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.57.18:820][114]LogSavePackage: Save=27.71ms
+[2016.08.18-01.57.18:820][114]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUIA089CBFD4112687A7B41C3889FBEC1B7.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.57.18:822][114]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.57.30:390][ 65]BlueprintLog: New page: Compile MainUI
+[2016.08.18-01.57.30:564][ 65]BlueprintEditorCompileResults: Info [3035.09] Compile of MainUI successful! [in 173 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-01.57.31:033][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-01.57.31:066][116]LogSavePackage: Save=28.09ms
+[2016.08.18-01.57.31:066][116]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI431921734224DED50E17578A5D19CB93.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-01.57.31:069][116]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-01.58.54:988][147]BlueprintLog: New page: Compile TestCameraController
+[2016.08.18-01.58.55:306][147]BlueprintEditorCompileResults: Info [3119.83] Compile of TestCameraController successful! [in 318 ms] (/Game/TopDownBP/Blueprints/TestCameraController.TestCameraController)
+[2016.08.18-01.58.56:037][204]LogSavePackage: Save=194.74ms
+[2016.08.18-01.58.56:038][204]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/TestCameraController12B791E846B70E5F5FCD05B0ADC1855C.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset'
+[2016.08.18-01.58.56:041][204]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset
+[2016.08.18-01.59.55:853][ 18]BlueprintLog: New page: Compile TestCameraController
+[2016.08.18-01.59.56:085][ 18]BlueprintEditorCompileResults: Info [3180.61] Compile of TestCameraController successful! [in 232 ms] (/Game/TopDownBP/Blueprints/TestCameraController.TestCameraController)
+[2016.08.18-01.59.57:158][116]LogSavePackage: Save=199.58ms
+[2016.08.18-01.59.57:158][116]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/TestCameraControllerCC84F1CC46A1F1A3348799890B5D3593.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset'
+[2016.08.18-01.59.57:160][116]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset
+[2016.08.18-02.00.54:602][846]BlueprintLog: New page: Compile TestCameraController
+[2016.08.18-02.00.54:841][846]BlueprintEditorCompileResults: Info [3239.36] Compile of TestCameraController successful! [in 238 ms] (/Game/TopDownBP/Blueprints/TestCameraController.TestCameraController)
+[2016.08.18-02.00.55:686][914]LogSavePackage: Save=208.23ms
+[2016.08.18-02.00.55:686][914]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/TestCameraController2D0909C44EC15F8EE6FBD0A7BC7FB0C1.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset'
+[2016.08.18-02.00.55:688][914]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Blueprints/TestCameraController.uasset
+[2016.08.18-02.00.57:654][142]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.00.57:654][142]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.18-02.00.57:655][142]PIE: New page: PIE session: TestMap (Aug 19, 2016, 2:00:57 AM)
+[2016.08.18-02.00.57:655][142]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TestMap
+[2016.08.18-02.00.57:689][142]LogPlayLevel: PIE: StaticDuplicateObject took: (0.034078s)
+[2016.08.18-02.00.57:690][142]LogAIModule: Creating AISystem for world TestMap
+[2016.08.18-02.00.57:690][142]LogPlayLevel: PIE: World Init took: (0.001342s)
+[2016.08.18-02.00.57:690][142]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TestMap.TestMap to /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap (0.035719s)
+[2016.08.18-02.00.57:754][142]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.08.18-02.00.57:774][142]LogInit: FAudioDevice initialized.
+[2016.08.18-02.00.57:835][142]LogWorld: Game class is 'TestGameMode_C'
+[2016.08.18-02.00.57:841][142]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2016.08.18-14.00.57
+[2016.08.18-02.00.57:841][142]LogWorld: Bringing up level for play took: 0.004597
+[2016.08.18-02.00.57:845][142]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TestMap 0.976
+[2016.08.18-02.00.57:845][142]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.01.27:430][684]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.01.27:469][684]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.02.19:082][760]BlueprintLog: New page: Compile MainUI
+[2016.08.18-02.02.19:248][760]BlueprintEditorCompileResults: Info [3323.77] Compile of MainUI successful! [in 165 ms] (/Game/TopDownBP/HUDS/MainUI.MainUI)
+[2016.08.18-02.02.19:921][834]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/HUDS/MainUI" FILE="../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset" SILENT=true
+[2016.08.18-02.02.19:954][834]LogSavePackage: Save=27.41ms
+[2016.08.18-02.02.19:954][834]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/MainUI56AE875A43310D67F50C73BF58790431.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset'
+[2016.08.18-02.02.19:957][834]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/HUDS/MainUI.uasset
+[2016.08.18-02.02.24:810][409]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.02.24:810][409]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.08.18-02.02.24:810][409]PIE: New page: PIE session: TestMap (Aug 19, 2016, 2:02:24 AM)
+[2016.08.18-02.02.24:810][409]LogPlayLevel: Creating play world package: /Game/TopDownBP/Maps/UEDPIE_0_TestMap
+[2016.08.18-02.02.24:844][409]LogPlayLevel: PIE: StaticDuplicateObject took: (0.033967s)
+[2016.08.18-02.02.24:846][409]LogAIModule: Creating AISystem for world TestMap
+[2016.08.18-02.02.24:846][409]LogPlayLevel: PIE: World Init took: (0.001573s)
+[2016.08.18-02.02.24:846][409]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TopDownBP/Maps/TestMap.TestMap to /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap (0.035999s)
+[2016.08.18-02.02.24:909][409]LogInit: XAudio2 using 'Speakers (Realtek High Definition Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2016.08.18-02.02.24:930][409]LogInit: FAudioDevice initialized.
+[2016.08.18-02.02.24:983][409]LogWorld: Game class is 'TestGameMode_C'
+[2016.08.18-02.02.24:988][409]LogWorld: Bringing World /Game/TopDownBP/Maps/UEDPIE_0_TestMap.TestMap up for play (max tick rate 0) at 2016.08.18-14.02.24
+[2016.08.18-02.02.24:989][409]LogWorld: Bringing up level for play took: 0.004016
+[2016.08.18-02.02.24:992][409]PIE: Info Play in editor start time for /Game/TopDownBP/Maps/UEDPIE_0_TestMap 0.124
+[2016.08.18-02.02.24:993][409]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.02.41:186][340]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.02.41:222][340]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel' has LevelScriptBlueprint '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap' with GeneratedClass '/Game/TopDownBP/Maps/TestMap.TestMap_C' with ClassGeneratedBy '/Game/TopDownBP/Maps/TestMap.TestMap:PersistentLevel.TestMap'
+[2016.08.18-02.02.47:222][505]LogSavePackage: Save=251.44ms
+[2016.08.18-02.02.47:222][505]LogSavePackage: Moving '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Saved/TestMapB9067FD741B730671B5E4A94ED36A4CB.tmp' to '../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Maps/TestMap.umap'
+[2016.08.18-02.02.47:225][505]LogSavePackage:Display: Finished SavePackage ../../../../../Uni work/Year 2/Rapid Prototyping/ClimateChanger/Content/TopDownBP/Maps/TestMap.umap
+[2016.08.18-02.02.49:215][691]Cmd: QUIT_EDITOR
+[2016.08.18-02.02.49:740][691]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.08.18-02.02.49:769][691]LogExit: Preparing to exit.
+[2016.08.18-02.02.50:121][691]LogExit: Editor shut down
+[2016.08.18-02.02.50:121][691]LogExit: Transaction tracking system shut down
+[2016.08.18-02.02.50:324][691]LogObj: Freed 0b from 0 cluster array pools.
+[2016.08.18-02.02.50:325][691]LogExit: Object subsystem successfully closed.
+[2016.08.18-02.02.50:337][691]LogD3D11RHI: Shutdown
+[2016.08.18-02.02.50:337][691]LogD3D11RHI: CleanupD3DDevice
+[2016.08.18-02.02.50:479][691]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module SequencerWidgets (217)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module BlueprintGraph (216)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module StatsViewer (215)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module SynthBenchmark (213)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (212)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module CrashTracker (211)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module SceneOutliner (210)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module WidgetCarousel (209)
+[2016.08.18-02.02.50:490][691]LogModuleManager: Shutting down and abandoning module AddContentDialog (208)
+[2016.08.18-02.02.50:492][691]LogModuleManager: Shutting down and abandoning module GameplayTags (207)
+[2016.08.18-02.02.50:492][691]LogModuleManager: Shutting down and abandoning module EditorWidgets (206)
+[2016.08.18-02.02.50:492][691]LogModuleManager: Shutting down and abandoning module CollectionManager (205)
+[2016.08.18-02.02.50:492][691]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.08.18-02.02.50:492][691]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.08.18-02.02.50:493][691]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.08.18-02.02.50:494][691]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.08.18-02.02.50:494][691]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.08.18-02.02.50:494][691]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.08.18-02.02.51:108][691]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.08.18-02.02.51:108][691]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.08.18-02.02.51:108][691]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.08.18-02.02.51:108][691]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.08.18-02.02.51:109][691]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.08.18-02.02.51:151][691]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.08.18-02.02.51:151][691]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.08.18-02.02.51:151][691]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.08.18-02.02.51:151][691]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.08.18-02.02.51:152][691]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.08.18-02.02.51:153][691]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.08.18-02.02.51:154][691]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.08.18-02.02.51:203][691]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.08.18-02.02.51:204][691]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.08.18-02.02.51:204][691]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.08.18-02.02.51:204][691]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.08.18-02.02.51:204][691]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.08.18-02.02.51:204][691]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.08.18-02.02.51:205][691]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.08.18-02.02.51:206][691]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.08.18-02.02.51:206][691]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.08.18-02.02.51:306][691]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.08.18-02.02.51:307][691]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.08.18-02.02.51:308][691]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.08.18-02.02.51:308][691]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.08.18-02.02.51:308][691]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.08.18-02.02.51:308][691]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.08.18-02.02.51:308][691]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.08.18-02.02.51:315][691]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.08.18-02.02.51:317][691]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.08.18-02.02.51:565][691]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.08.18-02.02.51:565][691]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.08.18-02.02.51:565][691]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.08.18-02.02.51:565][691]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.08.18-02.02.51:650][691]LogDerivedDataCache: Shutdown
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.08.18-02.02.51:650][691]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.08.18-02.02.51:651][691]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.08.18-02.02.53:153][691]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.08.18-02.02.53:154][691]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.08.18-02.02.53:168][691]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.08.18-02.02.53:169][691]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.08.18-02.02.53:169][691]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.08.18-02.02.53:169][691]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.08.18-02.02.53:173][691]LogExit: Exiting.
+[2016.08.18-02.02.53:197][691]Log file closed, 08/18/16 14:02:53
